@@ -1,7 +1,7 @@
-import SortByFilter from "./SortByFilter.tsx";
-import BrandFilter from "./BrandFilter.tsx";
+import SortByFilter from "./Filters/SortByFilter.tsx";
+import BrandFilter from "./Filters/BrandFilter.tsx";
 import useProducts from "../../hooks/useProducts.ts";
-import ModelFilter from "./ModelFilter.tsx";
+import ModelFilter from "./Filters/ModelFilter.tsx";
 import {Col, Row} from "react-bootstrap";
 
 export default function Filters() {
