@@ -5,15 +5,11 @@ import ModelFilter from "./ModelFilter.tsx";
 
 export default function FilterList() {
     const { data: products } = useProducts();
-    const brands = Array.from(
-        new Set(products.map(p => p.brand).filter(Boolean))
-    );
-    const models = Array.from(
-        new Set(products.map(p => p.model).filter(Boolean))
-    )
+    const brands = products.map(p => p.brand);
+    const models = products.map(p => p.model);
 
     return(
-        <div style={{height: '100%', display: 'flex', flexDirection: 'column', gap: '1rem', overflow: 'hidden'}}>
+        <div className="h-100 d-flex flex-column gap-3 overflow-hidden">
             <div className="row">
                 <div className="col-12">
                     <SortByFilter />
