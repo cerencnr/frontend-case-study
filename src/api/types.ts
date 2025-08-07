@@ -1,4 +1,4 @@
-export type ProductResponse = {
+export type Product = {
     id: string;
     name: string;
     model: string;
@@ -6,5 +6,5 @@ export type ProductResponse = {
     price: number;
     description: string;
     image: string;
-    createdAt: string;
+    createdAt: Date;
 }

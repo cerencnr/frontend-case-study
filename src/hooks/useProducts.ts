@@ -1,6 +1,7 @@
 import useSWR from "swr";
 import {getProducts} from "../api/product.api.ts";
-import type {ProductResponse} from "../api/models.ts";
+import type {Product} from "../api/types.ts";
+import {mapProductResponse} from "../api/productMapper.ts";
 
 export default function useProducts() {
     const {
@@ -10,22 +11,7 @@ export default function useProducts() {
         mutate,
     } = useSWR("api_products", () => getProducts());
 
-    let products: ProductResponse[] = [];
-
-    if (response?.data) {
-        products = response.data.map((item: ProductResponse) => {
-            return { // this approach is for potential mapping purposes
-                createdAt: new Date(item.createdAt),
-                name: item.name,
-                image: item.image,
-                price: item.price,
-                description: item.description,
-                model: item.model,
-                brand: item.brand,
-                id: item.id,
-            }
-        })
-    }
+    const products: Product[] = response?.data.map(mapProductResponse) || [];
 
     return {
         data: products,
