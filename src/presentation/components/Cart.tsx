@@ -39,18 +39,18 @@ export function Cart() {
                                 <p>${item.price}</p>
                             </div>
                             <div className="button-group">
-                                <button className="custom-button" onClick={() => dispatch(decreaseQuantity(item.id))}>
+                                <button className="cart-button" onClick={() => dispatch(decreaseQuantity(item.id))}>
                                    <p className="quantity-button">
                                        -
                                    </p>
                                 </button>
                                 <span className="quantity">{item.quantity}</span>
-                                <button className="custom-button" onClick={() => dispatch(increaseQuantity(item.id))}>
+                                <button className="cart-button" onClick={() => dispatch(increaseQuantity(item.id))}>
                                     <p className="quantity-button">
                                         +
                                     </p>
                                 </button>
-                                <button className="custom-button" onClick={() => dispatch(removeFromCart(item.id))}><DeleteOutlineRoundedIcon/></button>
+                                <button className="cart-button" onClick={() => dispatch(removeFromCart(item.id))}><DeleteOutlineRoundedIcon/></button>
                             </div>
                        </li>
                     ))}
@@ -58,7 +58,7 @@ export function Cart() {
             )}
             <hr />
             <p className="mb-0">Total: ${total.toFixed(2)}</p>
-            <button className="mt-2 fw-bold add-to-cart-button" disabled={cartItems.length === 0} onClick={onCheckout}>
+            <button className="mt-2 fw-bold custom-button" disabled={cartItems.length === 0} onClick={onCheckout}>
                 Checkout
             </button>
         </div>

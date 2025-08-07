@@ -47,7 +47,7 @@ export default function ProductCard({ product }: ProductCardProps) {
                             ${product.price}
                         </p>
                     </Card.Text>
-                    <button onClick={handleAddToCart} className="add-to-cart-button">
+                    <button onClick={handleAddToCart} className="custom-button">
                         Add to Cart
                     </button>
                 </div>

@@ -33,13 +33,13 @@ export default function ProductDetail() {
                         <div className="col-12 col-xl-6 d-flex flex-column gap-2 justify-content-between">
                             <h1 className="m-0">{product?.name}</h1>
                             <p className="m-0">${product?.price}</p>
-                            <button className="my-2 fw-bold add-to-cart-button" onClick={handleAddToCart}>Add to Cart
+                            <button className="my-2 fw-bold custom-button" onClick={handleAddToCart}>Add to Cart
                             </button>
                             <p>{product?.description}</p>
                         </div>
                     </div>
                 </div>
-                <Cart position={"end"}/>
+                <Cart />
             </div>
         </div>
     );
