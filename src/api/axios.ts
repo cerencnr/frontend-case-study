@@ -1,6 +1,7 @@
 import axiosPackage from "axios";
+import {VITE_BACKEND_URL} from "../config/config.ts";
 
 export const axios = axiosPackage.create({
     withCredentials: false,
-    baseURL: "https://5fc9346b2af77700165ae514.mockapi.io",
+    baseURL: VITE_BACKEND_URL,
 });
