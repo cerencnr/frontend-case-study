@@ -2,7 +2,6 @@ import SortByFilter from "./SortByFilter.tsx";
 import BrandFilter from "./BrandFilter.tsx";
 import useProducts from "../../../hooks/useProducts.ts";
 import ModelFilter from "./ModelFilter.tsx";
-import {Col, Row} from "react-bootstrap";
 
 export default function FilterList() {
     const { data: products } = useProducts();
@@ -15,17 +14,17 @@ export default function FilterList() {
 
     return(
         <div style={{height: '100%', display: 'flex', flexDirection: 'column', gap: '1rem', overflow: 'hidden'}}>
-            <Row>
-                <Col className="col-12">
+            <div className="row">
+                <div className="col-12">
                     <SortByFilter />
-                </Col>
-                <Col className="col-12">
+                </div>
+                <div className="col-12">
                     <BrandFilter allBrands={brands}/>
-                </Col>
-                <Col className="col-12">
+                </div>
+                <div className="col-12">
                     <ModelFilter allModels={models}/>
-                </Col>
-            </Row>
+                </div>
+            </div>
         </div>
 
     );
