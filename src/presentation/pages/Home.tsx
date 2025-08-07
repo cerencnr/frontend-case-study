@@ -1,5 +1,5 @@
 import './Home.css';
-import Pagination from "../components/Pagination.tsx";
+import Pagination from "../components/Pagination/Pagination.tsx";
 import useProducts from "../../hooks/useProducts.ts";
 import {useEffect, useState} from "react";
 import ProductList from "../components/ProductList.tsx";
