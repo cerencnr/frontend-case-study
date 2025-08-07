@@ -2,7 +2,7 @@ import './Home.css';
 import Pagination from "../components/Pagination/Pagination.tsx";
 import useProducts from "../../hooks/useProducts.ts";
 import {useEffect, useState} from "react";
-import ProductList from "../components/ProductList.tsx";
+import ProductList from "../components/Product/ProductList.tsx";
 import type {RootState} from "../../store";
 import {useSelector} from "react-redux";
 import type {Product} from "../../api/types.ts";

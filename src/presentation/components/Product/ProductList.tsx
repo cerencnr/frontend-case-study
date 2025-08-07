@@ -1,6 +1,6 @@
 import ProductCard from "./ProductCard.tsx";
 import {Col, Row} from "react-bootstrap";
-import type {Product} from "../../api/types.ts";
+import type {Product} from "../../../api/types.ts";
 
 type ProductListProps = {
     currentProducts: Product[];

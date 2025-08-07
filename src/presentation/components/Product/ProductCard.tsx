@@ -1,9 +1,9 @@
 import {Card} from 'react-bootstrap';
 import './ProductCard.css'
-import type {Product} from "../../api/types.ts";
+import type {Product} from "../../../api/types.ts";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
-import {addToCart} from "../../store/cartSlice.ts";
+import {addToCart} from "../../../store/cartSlice.ts";
 
 type ProductCardProps = {
     product: Product;
