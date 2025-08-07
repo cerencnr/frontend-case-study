@@ -6,7 +6,7 @@ import ProductList from "../components/ProductList.tsx";
 import type {RootState} from "../../store";
 import {useSelector} from "react-redux";
 import type {Product} from "../../api/types.ts";
-import Filters from "../components/Filters.tsx";
+import FilterList from "../components/Filters/FilterList.tsx";
 import {Cart} from "../components/Cart.tsx";
 
 const PAGE_SIZE = 12;
@@ -15,7 +15,7 @@ export function SideColumn({ position }: { position: 'start' | 'end' }) {
     const alignment = position === 'start' ? 'text-sm-start' : 'text-sm-end';
     return (
         <div className={`col-12 col-sm-3 col-lg-2 text-center ${alignment} action-box`} style={{ height: '100%' }}>
-            <Filters />
+            <FilterList />
         </div>
     );
 }
