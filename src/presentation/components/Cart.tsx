@@ -4,6 +4,7 @@ import {
     increaseQuantity,
     decreaseQuantity,
     removeFromCart,
+    clearCart,
 } from "../../store/cartSlice";
 import DeleteOutlineRoundedIcon from '@mui/icons-material/DeleteOutlineRounded';
 import './Cart.css'
@@ -20,7 +21,7 @@ export function Cart({ position }: { position: 'start' | 'end' }) {
 
     const onCheckout = () => {
         toast.success(`Checkout initiated. Total: $${total.toFixed(2)}`);
-        dispatch({ type: 'cart/clearCart' });
+        dispatch(clearCart());
     }
 
     return (
