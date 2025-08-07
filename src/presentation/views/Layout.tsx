@@ -1,6 +1,6 @@
 import Header from "../components/Header/Header.tsx";
 import {Outlet} from "react-router-dom";
-import Content from "../components/Content.tsx";
+import Content from "./Content.tsx";
 
 export default function Layout() {
     return (
