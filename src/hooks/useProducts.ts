@@ -15,7 +15,7 @@ export default function useProducts() {
     if (response?.data) {
         products = response.data.map((item: ProductResponse) => {
             return { // this approach is for potential mapping purposes
-                createdAt: item.createdAt,
+                createdAt: new Date(item.createdAt),
                 name: item.name,
                 image: item.image,
                 price: item.price,

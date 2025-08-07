@@ -1,10 +1,10 @@
 export type ProductResponse = {
-    createdAt: string;
+    id: string;
     name: string;
-    image: string;
-    price: number;
-    description: string;
     model: string;
     brand: string;
-    id: string;
+    price: number;
+    description: string;
+    image: string;
+    createdAt: Date;
 }

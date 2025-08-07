@@ -41,9 +41,9 @@ export default function Home() {
             } else if (sortBy === "PRICE_LOW_TO_HIGH") {
                 return a.price - b.price;
             } else if (sortBy === "NEW_TO_OLD") {
-                return new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime();
+                return b.createdAt.getTime() - a.createdAt.getTime();
             } else if (sortBy === "OLD_TO_NEW") {
-                return new Date(a.createdAt).getTime() - new Date(b.createdAt).getTime();
+                return a.createdAt.getTime() - b.createdAt.getTime();
             }
             return 0;
         });

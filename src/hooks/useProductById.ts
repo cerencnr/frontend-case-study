@@ -16,7 +16,7 @@ export default function useProductById(productId: string) {
         product = response.data as ProductResponse;
 
         product = { // this approach is for potential mapping purposes
-            createdAt: product.createdAt,
+            createdAt: new Date(product.createdAt),
             name: product.name,
             image: product.image,
             price: product.price,
