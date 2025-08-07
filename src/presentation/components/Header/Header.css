@@ -1,8 +1,10 @@
 .header-container {
     flex-shrink: 0;
-    padding: 0.8rem 10rem;
+    padding: 0.5rem 10rem;
     background-color: cornflowerblue;
     border-bottom: 1px solid #dee2e6;
+    display: flex;
+    align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -14,6 +16,7 @@
 .brand-box {
     font-weight: bold;
     display: flex;
+    text-align: center;
 }
 
 .eteration {
@@ -27,6 +30,12 @@
     -ms-user-select: none;
 }
 
-.action-box {
+.balance {
+    text-align: center;
     font-weight: bold;
+    color: white;
+    align-self: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
 }
