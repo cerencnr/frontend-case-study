@@ -70,7 +70,7 @@ export default function Home() {
                     <Pagination totalPages={totalPages} currentPage={currentPage} setCurrentPage={setCurrentPage}/>
                 </div>
             </div>
-            <Cart position="end"/>
+            <Cart />
         </>
 
     );
