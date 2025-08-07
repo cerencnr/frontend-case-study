@@ -7,7 +7,7 @@ import type {RootState} from "../../store";
 import {useSelector} from "react-redux";
 import type {Product} from "../../api/types.ts";
 import FilterList from "../components/Filters/FilterList.tsx";
-import {Cart} from "../components/Cart.tsx";
+import {Cart} from "../components/Cart/Cart.tsx";
 
 const PAGE_SIZE = 12;
 

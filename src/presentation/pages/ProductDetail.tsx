@@ -1,6 +1,6 @@
 import {useParams} from "react-router-dom";
 import useProductById from "../../hooks/useProductById.ts";
-import {Cart} from "../components/Cart.tsx";
+import {Cart} from "../components/Cart/Cart.tsx";
 import {addToCart} from "../../store/cartSlice.ts";
 import {useDispatch} from "react-redux";
 

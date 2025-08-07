@@ -1,11 +1,11 @@
 import {useDispatch, useSelector} from "react-redux";
-import type {RootState} from "../../store";
+import type {RootState} from "../../../store";
 import {
     increaseQuantity,
     decreaseQuantity,
     removeFromCart,
     clearCart,
-} from "../../store/cartSlice";
+} from "../../../store/cartSlice.ts";
 import DeleteOutlineRoundedIcon from '@mui/icons-material/DeleteOutlineRounded';
 import './Cart.css'
 import toast from "react-hot-toast";
