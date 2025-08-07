@@ -1,9 +1,9 @@
 import ProductCard from "./ProductCard.tsx";
 import {Col, Row} from "react-bootstrap";
-import type {ProductResponse} from "../../api/models.ts";
+import type {Product} from "../../api/types.ts";
 
 type ProductListProps = {
-    currentProducts: ProductResponse[];
+    currentProducts: Product[];
 }
 
 export default function ProductList({currentProducts}: ProductListProps) {

@@ -5,7 +5,7 @@ import {useEffect, useState} from "react";
 import ProductList from "../components/ProductList.tsx";
 import type {RootState} from "../../store";
 import {useSelector} from "react-redux";
-import type {ProductResponse} from "../../api/models.ts";
+import type {Product} from "../../api/types.ts";
 import Filters from "../components/Filters.tsx";
 import {Cart} from "../components/Cart.tsx";
 
@@ -35,7 +35,7 @@ export default function Home() {
             (selectedBrands.length === 0 || selectedBrands.some(brand => product.brand === brand)) &&
             (selectedModels.length === 0 || selectedModels.some(model => product.model === model))
         )
-        .sort((a: ProductResponse, b: ProductResponse) => {
+        .sort((a: Product, b: Product) => {
             if (sortBy === "PRICE_HIGH_TO_LOW") {
                 return b.price - a.price;
             } else if (sortBy === "PRICE_LOW_TO_HIGH") {

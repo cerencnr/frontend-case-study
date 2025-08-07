@@ -1,12 +1,12 @@
 import {Card} from 'react-bootstrap';
 import './ProductCard.css'
-import type {ProductResponse} from "../../api/models.ts";
+import type {Product} from "../../api/types.ts";
 import {useNavigate} from "react-router-dom";
 import {useDispatch} from "react-redux";
 import {addToCart} from "../../store/cartSlice.ts";
 
 type ProductCardProps = {
-    product: ProductResponse;
+    product: Product;
 };
 
 export default function ProductCard({ product }: ProductCardProps) {
