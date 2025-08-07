@@ -1,0 +1,32 @@
+.header-container {
+    flex-shrink: 0;
+    padding: 0.8rem 10rem;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid #dee2e6;
+}
+
+@media (max-width: 1200px) {
+    .header-container {
+        padding: 0.8rem;
+    }
+}
+
+.brand-box {
+    font-weight: bold;
+    display: flex;
+}
+
+.eteration {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+    align-self: center;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.action-box {
+    font-weight: bold;
+}

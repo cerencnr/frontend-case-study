@@ -1,0 +1,10 @@
+.home-container {
+    padding: 0.8rem 10rem;
+    height: 100%;
+}
+
+@media (max-width: 1200px) {
+    .home-container {
+        padding: 0.8rem;
+    }
+}

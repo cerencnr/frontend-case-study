@@ -1,0 +1,28 @@
+.custom-button {
+    border: none;
+    display: flex;
+    background: transparent;
+    flex: 1;
+}
+
+.button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    background-color: #e3e7ed;
+    border-radius: 5px;
+}
+
+.quantity {
+    color: white;
+    background: cornflowerblue;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.quantity-button {
+    margin: 0;
+    padding: 0 5px;
+    font-weight: bold;
+}
