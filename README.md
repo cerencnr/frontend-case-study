@@ -22,3 +22,9 @@
 
 ## API URL
 https://5fc9346b2af77700165ae514.mockapi.io
+
+## dev note:
+The filters may seem to not work correctly because the 
+product names do not match the brand and models, 
+but filtering is being done based on fields that are not visible on the screen.
+Therefore, if api is updated with correct data, filtering will work correctly.
